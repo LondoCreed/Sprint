@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    min-height: 10vh;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.barnav{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    padding: 0px 4px;
+    
+}
+
+.barnav a{
+    text-decoration: none;
+    color: brown;
+    background-color:pink;
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid yellow;
+    border-radius: 40px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px 0px ;
+
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left: 65%;    
+}
+/*Aca termina Header*/
+
+main{
+    min-height: 80vh;
+    background-color: salmon;
+}
+h1{
+    padding-top: 4px;
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+}
+h2{
+    text-align: center;
+    font-style: oblique;
+}
+
+.containerimg{
+    text-align: center;
+    border: solid (223, 223, 9, 0.64) ;
+    background-color: rgba(223, 223, 9, 0.64);
+}
+
+.banner{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+
+.secondcontainer{
+    
+    display: flex;
+    font-size: 25px;
+    font-style: oblique;
+    width: 800px;
+    padding-top: 30px;
+    transform: translateX(350px);
+
+ }
+
+.texto2{
+    align-self: center;
+    padding: 50px;
+    text-align: center;
+    
+
+}
+
+.imagen1{
+
+    width: 400px;
+    height: 250px;
+    border-radius: 20%;
+    background-color: brown;
+    
+}
+
+/*Aca termina Main de Inicio*/
+.father{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.multiimagen{
+    width: 250px;
+    height: 150px;
+    border-radius: 20%;
+    margin-left: 20px;
+}
+
+.textoimagen{
+    text-align: center;
+    vertical-align: text-bottom;
+    padding: 0px;
+    margin: 50px;
+    font-size: 20px;
+    font-style: oblique;
+    width: 600px;
+
+}
+
+/*Aca termina Main de AboutUS*/
+
+.imgcc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgcontact{
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20%;
+
+}
+
+.pcontact{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    padding: 0px 100px;
+}
+
+.datacontainer{
+    display: flex;
+    justify-content: center;
+}
+.datos{  
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 20px;
+    font-size: 30px;
+    font-style: oblique;
+    width: 500px;
+    height: 100px;
+    padding-left: 180px;
+    transform: translateX(-80px);
+}
+
+
+
+/*Aca termina Main de Contact*/
+
+
+
+
+
+
+
+
+footer{
+    min-height: 7.2vh;
+    padding-top: 15px;
+    background-color: coral;
+    text-align: center;
+    font-style: initial;
+
+}
