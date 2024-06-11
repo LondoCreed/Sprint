@@ -23,7 +23,7 @@ header{
     color: brown;
     background-color:pink;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 19px;
     border: 2px solid yellow;
     border-radius: 40px;
     margin: 10px;
@@ -32,6 +32,7 @@ header{
     width: 180px;
     text-align: center;
     font-style: oblique;
+    font-weight: bolder;
 }
 
 .logo{
@@ -167,10 +168,41 @@ h2{
 
 }
 
-
-
-
 /*Aca termina Main de Contact*/
+
+.layout{
+    margin-top: 40px;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tabla, .filas, .celdap, .celdas{
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    font-style: oblique;
+}
+
+.celdap, .celdas{
+    width: 250px ;
+    height: 80px;
+}
+
+.celdap{
+    padding: 40px;
+    background-color: bisque ;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.celdas{
+    background-color: coral;
+}
+
 
 
 
