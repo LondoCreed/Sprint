@@ -172,7 +172,7 @@ h2{
 /*Aca termina Main de Contact*/
 
 .layout{
-    margin-top: 40px;
+    margin-top: 80px;
     width: 100%;
     height: 30vh;
     display: flex;
@@ -189,7 +189,7 @@ h2{
 
 .celdap, .celdas{
     width: 250px ;
-    height: 80px;
+    height: 65px;
 }
 
 .celdap{
@@ -206,25 +206,32 @@ h2{
 
 /*Aca termina Main de Information*/
 
+.mastercont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .containerlist1{
     font-style: oblique;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 150px;
     justify-content: center;
     padding: 20px;
+    gap: 10px;
+    margin-right: 50px;
+
 }
 
 .containerlist2{
     font-style: oblique;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 150px;
     justify-content: center;
     padding: 10px;
-    margin-left: 60px;
 }
 .imglist{
     width: 220px;
@@ -239,6 +246,10 @@ h2{
     
 }
 
+.space{
+    margin-bottom: 150px;
+}
+
 
 /*Aca termina Main de Benefitsandtips*/
 
@@ -249,6 +260,9 @@ footer{
     padding-top: 15px;
     background-color: coral;
     text-align: center;
-    font-style: initial;
+    font-style: oblique;
+    
 
 }
+
+/*Aca termina El Pie xD*/
