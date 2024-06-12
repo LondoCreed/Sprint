@@ -38,7 +38,7 @@ header{
 .logo{
     height: 80px;
     width: 80px;
-    position: relative;
+    position: relative; /*Me tome la libertad de dejarlo, por que mencionaron que lo unico en lo que podria ponerse position seria el logo " imagen pequeña"*/
     left: 25%;    
 }
 /*Aca termina Header*/
