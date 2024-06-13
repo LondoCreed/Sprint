@@ -39,7 +39,7 @@ header{
     height: 80px;
     width: 80px;
     position: relative; /*Me tome la libertad de dejarlo, por que mencionaron que lo unico en lo que podria ponerse position seria el logo " imagen pequeña"*/
-    left: 25%;    
+    left: 12%;    
 }
 /*Aca termina Header*/
 
@@ -250,9 +250,19 @@ h2{
     margin-bottom: 150px;
 }
 
-
 /*Aca termina Main de Benefitsandtips*/
 
+
+.masterraffle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
 
 
 footer{
