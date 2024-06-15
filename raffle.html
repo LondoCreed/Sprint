@@ -13,12 +13,12 @@
         <div>
             <nav class="barnav">
                 
-                  <a href="index.html">Home</a>
-                  <a href="aboutUs.html">About Us</a>
-                  <a href="contact.html">  Contact  </a>
-                  <a href="information.html">More Information</a>
-                  <a href="benefitsTips.html">Benefits and Tips</a>
-                  <a href="raffle.html">Raffle</a>
+                  <a href="./index.html">Home</a>
+                  <a href="./aboutUs.html">About Us</a>
+                  <a href="./contact.html">  Contact  </a>
+                  <a href="./information.html">More Information</a>
+                  <a href="./benefitsTips.html">Benefits and Tips</a>
+                  <a href="./raffle.html">Raffle</a>
                   <img class="logo" src="./assets/img/IceCream1/logo.png" alt="logo">
             </nav>
         </div>
@@ -37,17 +37,50 @@
             <div>
                 <form class="formulario" action="/show_data.html" method="get">
 
-                    <label>
+                    <label for="name">
                         Name
-                        <input type="text">
+                        <input class="textlabel" type="text" name="Nombre" id="name">
                     </label>
-                    <label>
+                    <label class="texto" for="lname">
                         Last Name
-                        <input type="text">
+                        <input class="textlabel" type="text" name="Apellido" id="lname">
+                    </label>
+                    <label for="moz"> 
+                        Choose Meet or Zoom
+                    <select class="textlabel" name="Seleccion" id="moz">
+                       <option value="Meet">Meet</option>
+                       <option value="Zoom">Zoom</option>
+                    </select>
+                    </label>
+                    <label for="Fecha">
+                        Choose a Date
+                        <input class="textlabel" type="date" name="Fecha" id="date">
+                    </label>
+
+                    
+                    <label for="">Payment Option</label>
+                    <label class="radios" for="cash">
+                        Cash
+                        <input type="radio" name="Pago" id="cash" value="Cash">
+                    </label>
+                    <label class="radios" for="cc">
+                        Credit Card
+                        <input type="radio" name="Pago" id="cc" value="Credit Card">
+                    </label>
+                    <label class="radios" for="dc">
+                        Debit Card
+                        <input type="radio" name="Pago" id="dc" value="Debit Card">
                     </label>
                     
-
-
+                    <label class="msjbox" for="msj">
+                        Message(optional)
+                        <textarea name="Mensaje" id="msj" cols="30" rows="10"></textarea>
+                    </label>
+                    <label class="check" for="confirm">
+                        I accept terms and conditions...
+                        <input  type="checkbox" name="TyC" id="confirm">
+                        <button class="boton">Send</button>
+                    </label>
 
                 </form>
             </div>

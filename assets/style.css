@@ -257,12 +257,42 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 70vh;
+    gap: 100px;
+    
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
+    width: 25vw;
 }
+
+.textlabel{
+    width: 100%;
+}
+
+.radios{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+   
+}
+
+.msjbox{
+    display: flex;
+    flex-direction: column;
+}
+.check{
+    display: flex;
+    justify-content: space-around;    
+  }
+
+ .boton{
+    width: 38%;
+ } 
+
+/*Aca termina El Main de Raffle*/
 
 
 footer{
@@ -270,9 +300,8 @@ footer{
     padding-top: 15px;
     background-color: coral;
     text-align: center;
-    font-style: oblique;
-    
-
+    font-style: oblique;  
 }
+
 
 /*Aca termina El Pie xD*/
