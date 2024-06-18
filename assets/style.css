@@ -1,20 +1,41 @@
+html{
+    font-style: oblique;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.masteri{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Aca termina Header*/
+
+
 header{
     min-height: 10vh;
     background-color: bisque;
     padding: 10px;
 }
-
+.logocontain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
 .barnav{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    /* display: flex;
     flex-direction: row;
-    height: 10vh;
     padding: 0px 4px;
+    gap: 8px; */
     
 }
 
@@ -26,36 +47,32 @@ header{
     font-size: 19px;
     border: 2px solid yellow;
     border-radius: 40px;
-    margin: 10px;
-    padding: 15px;
     box-shadow: 5px 5px 5px 0px ;
-    width: 180px;
     text-align: center;
-    font-style: oblique;
     font-weight: bolder;
+    padding: 10px;
+    
 }
 
 .logo{
-    height: 80px;
-    width: 80px;
-    position: relative; /*Me tome la libertad de dejarlo, por que mencionaron que lo unico en lo que podria ponerse position seria el logo " imagen pequeña"*/
-    left: 12%;    
+    width: 40px;
+    object-fit: cover;
 }
 /*Aca termina Header*/
 
 main{
-    min-height: 80vh;
+    flex-grow: 1;
     background-color: salmon;
 }
 h1{
     padding-top: 4px;
     text-align: center;
     font-size: 30px;
-    font-style: oblique;
+    width: 100%;
 }
 h2{
     text-align: center;
-    font-style: oblique;
+    width: 100%;
 }
 
 .containerimg{
@@ -73,57 +90,61 @@ h2{
     
 }
 
+.containerdos{
+    width: 100%;
+    display: flex;
+}
+
 .secondcontainer{
     
     display: flex;
-    font-size: 25px;
-    font-style: oblique;
-    width: 900px;
-    padding-top: 30px;
-    transform: translateX(300px);
-
+    flex-direction: column-reverse ;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
  }
 
 .texto2{
     align-self: center;
-    padding: 40px;
     text-align: center;
-    
-
+    width: 80%;
 }
 
 .imagen1{
-
-    width: 400px;
-    height: 250px;
+    object-fit: contain;
+    width: 150px;
     border-radius: 20%;
-    background-color: brown;
+    background-color: brown;    
     
 }
 
 /*Aca termina Main de Inicio*/
 .father{
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 
 }
 
 .multiimagen{
-    width: 250px;
-    height: 150px;
+    width: 150px;
     border-radius: 20%;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    object-fit: contain;
 }
 
 .textoimagen{
     text-align: center;
     vertical-align: text-bottom;
     padding: 0px;
-    margin: 50px;
     font-size: 20px;
-    font-style: oblique;
-    width: 600px;
+    /* width: 600px; */
+    /* margin: 50px; */
 
 }
 
@@ -148,23 +169,24 @@ h2{
     font-size: 20px;
     font-style: oblique;
     text-align: center;
-    padding: 0px 100px;
+    
 }
 
 .datacontainer{
     display: flex;
     justify-content: center;
-    margin-left: 230px;
+    flex-direction: column;
+    gap: 10px;
+   /*  margin-left: 230px; */
 }
 .datos{  
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     font-size: 20px;
-    font-style: oblique;
-    width: 100px;
+    /* width: 100px;
     height: 100px;
-    padding-right: 200px;
+    padding-right: 200px; */
     text-decoration: none;
 
 }
@@ -174,26 +196,23 @@ h2{
 .layout{
     margin-top: 80px;
     width: 100%;
-    height: 30vh;
     display: flex;
     justify-content: center;
 }
-
 
 .tabla, .filas, .celdap, .celdas{
     border: 1px solid black;
     text-align: center;
     border-collapse: collapse;
-    font-style: oblique;
 }
 
 .celdap, .celdas{
-    width: 250px ;
-    height: 65px;
+    width: 100% ;
+    height: 100%;
 }
 
 .celdap{
-    padding: 40px;
+    /* padding: 40px; */
     background-color: bisque ;
     font-size: 20px;
     font-weight: bold;
@@ -208,31 +227,21 @@ h2{
 
 .mastercont{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.containerlist1{
-    font-style: oblique;
+.containerlist{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
     gap: 10px;
-    margin-right: 50px;
 
 }
 
-.containerlist2{
-    font-style: oblique;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 150px;
-    justify-content: center;
-    padding: 10px;
-}
 .imglist{
     width: 220px;
     height: 220px;
@@ -243,18 +252,17 @@ h2{
 .listtext1{ 
     font-size: 20px;
     font-weight: bold;
-    
+    align-items: center;
+    padding-left: 50px;
 }
 
-.space{
-    margin-bottom: 150px;
-}
 
 /*Aca termina Main de Benefitsandtips*/
 
 
 .masterraffle{
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     min-height: 70vh;
@@ -263,9 +271,10 @@ h2{
 }
 
 .formulario{
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 25vw;
+    width: 50vw;
 }
 
 .textlabel{
@@ -296,11 +305,10 @@ h2{
 
 
 footer{
-    min-height: 7.2vh;
+    min-height: 10vh;
     padding-top: 15px;
     background-color: coral;
     text-align: center;
-    font-style: oblique;  
 }
 
 
