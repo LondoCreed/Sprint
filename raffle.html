@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raffle</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="shortcut icon" href="./assets/img/IceCream1/icon.png" type="image/x-icon">
-    
+
 </head>
+
 <body>
     <div class="masteri">
 
         <header>
             <div class="logocontain">
                 <nav class="barnav">
-                      <a href="./index.html">Home</a>
-                      <a href="./aboutUs.html">About Us</a>
-                      <a href="./contact.html">  Contact  </a>
-                      <a href="./information.html">More Information</a>
-                      <a href="./benefitsTips.html">Benefits and Tips</a>
-                      <a href="./raffle.html">Raffle</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./aboutUs.html">About Us</a>
+                    <a href="./contact.html"> Contact </a>
+                    <a href="./information.html">More Information</a>
+                    <a href="./benefitsTips.html">Benefits and Tips</a>
+                    <a href="./raffle.html">Raffle</a>
                 </nav>
                 <img class="logo" src="./assets/img/IceCream1/logo.png" alt="logo">
             </div>
-        
+
         </header>
-    <main>
-        <h1>Raffle</h1>
-        <h2>You can collaborate to hold an exhibition event and participate in a raffle to win an easel</h2>
+        <main>
+            <h1>Raffle</h1>
+            <h2>You can collaborate to hold an exhibition event and participate in a raffle to win an easel</h2>
 
-        <div class="masterraffle">
+            <div class="masterraffle">
 
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22251.737012370893!2d-118.27775431582263!3d33.99919870572008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c843a84e9b51%3A0x31bdc7cc339f51da!2sSouth%20Park%20Recreation%20Center!5e0!3m2!1ses-419!2smx!4v1718304185895!5m2!1ses-419!2smx" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22251.737012370893!2d-118.27775431582263!3d33.99919870572008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c843a84e9b51%3A0x31bdc7cc339f51da!2sSouth%20Park%20Recreation%20Center!5e0!3m2!1ses-419!2smx!4v1718304185895!5m2!1ses-419!2smx"
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <form class="formulario" action="/show_data.html" method="get">
+
+                        <label for="name">
+                            Name
+                            <input class="textlabel" type="text" name="Nombre" id="name">
+                        </label>
+                        <label class="texto" for="lname">
+                            Last Name
+                            <input class="textlabel" type="text" name="Apellido" id="lname">
+                        </label>
+                        <label for="moz">
+                            Choose Meet or Zoom
+                            <select class="textlabel" name="Seleccion" id="moz">
+                                <option value="Meet">Meet</option>
+                                <option value="Zoom">Zoom</option>
+                            </select>
+                        </label>
+                        <label for="Fecha">
+                            Choose a Date
+                            <input class="textlabel" type="date" name="Fecha" id="date">
+                        </label>
+
+
+                        <label for="">Payment Option</label>
+                        <label class="radios" for="cash">
+                            Cash
+                            <input type="radio" name="Pago" id="cash" value="Cash">
+                        </label>
+                        <label class="radios" for="cc">
+                            Credit Card
+                            <input type="radio" name="Pago" id="cc" value="Credit Card">
+                        </label>
+                        <label class="radios" for="dc">
+                            Debit Card
+                            <input type="radio" name="Pago" id="dc" value="Debit Card">
+                        </label>
+
+                        <label class="msjbox" for="msj">
+                            Message(optional)
+                            <textarea name="Mensaje" id="msj" cols="30" rows="5"></textarea>
+                        </label>
+                        <div class="tyc">
+                            <label class="check" for="confirm">
+                                <input type="checkbox" name="TyC" id="confirm">
+                                I accept terms and conditions...
+                            </label>
+                            <button class="boton">Send</button>
+                        </div>
+
+                    </form>
+                </div>
+
+
             </div>
+
+
+        </main>
+
+        <footer>
             <div>
-                <form class="formulario" action="/show_data.html" method="get">
-                
-                    <label for="name">
-                        Name
-                        <input class="textlabel" type="text" name="Nombre" id="name">
-                    </label>
-                    <label class="texto" for="lname">
-                        Last Name
-                        <input class="textlabel" type="text" name="Apellido" id="lname">
-                    </label>
-                    <label for="moz"> 
-                        Choose Meet or Zoom
-                    <select class="textlabel" name="Seleccion" id="moz">
-                       <option value="Meet">Meet</option>
-                       <option value="Zoom">Zoom</option>
-                    </select>
-                    </label>
-                    <label for="Fecha">
-                        Choose a Date
-                        <input class="textlabel" type="date" name="Fecha" id="date">
-                    </label>
-
-                    
-                    <label for="">Payment Option</label>
-                    <label class="radios" for="cash">
-                        Cash
-                        <input type="radio" name="Pago" id="cash" value="Cash">
-                    </label>
-                    <label class="radios" for="cc">
-                        Credit Card
-                        <input type="radio" name="Pago" id="cc" value="Credit Card">
-                    </label>
-                    <label class="radios" for="dc">
-                        Debit Card
-                        <input type="radio" name="Pago" id="dc" value="Debit Card">
-                    </label>
-                    
-                    <label class="msjbox" for="msj">
-                        Message(optional)
-                        <textarea name="Mensaje" id="msj" cols="30" rows="10"></textarea>
-                    </label>
-                    <label class="check" for="confirm">
-                        I accept terms and conditions...
-                        <input  type="checkbox" name="TyC" id="confirm">
-                        <button class="boton">Send</button>
-                    </label>
-
-                </form>
+                <p>Created by: Carlos Perez</p>
             </div>
 
-
-        </div>
-
-
-    </main>
-
-    <footer>
-        <div>
-            <p>Created by: Carlos Perez</p>
-        </div>
-
-    </footer>
+        </footer>
     </div>
-    
+
 </body>
+
 </html>
